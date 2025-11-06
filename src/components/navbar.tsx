@@ -32,12 +32,12 @@ export default function Navbar() {
   }, []);
 
   const services = [
-    { name: "Startup Consulting", href: "/services/startup-consulting" },
-    { name: "Business Strategy", href: "/services/business-strategy" },
-    { name: "Digital Marketing", href: "/services/digital-marketing" },
-    { name: "ISO Certification", href: "/services/iso-certification" },
-    { name: "Software Development", href: "/services/software-development" },
-    { name: "AI Tools Integration", href: "/services/ai-tools-integration" },
+    { name: "Startup Consulting", href: "#services" },
+    { name: "Business Strategy", href: "#services" },
+    { name: "Digital Marketing", href: "#services" },
+    { name: "ISO Certification", href: "#services" },
+    { name: "Software Development", href: "#services" },
+    { name: "AI Tools Integration", href: "#services" },
   ];
 
   return (
