@@ -32,11 +32,12 @@ export default function Navbar() {
   }, []);
 
   const services = [
-    { name: "GST Registration", href: "/services/gst-registration" },
-    { name: "GST Returns Filing", href: "/services/gst-returns" },
-    { name: "GST Compliance", href: "/services/gst-compliance" },
-    { name: "MSME Registrations", href: "/services/msme" },
-    { name: "Income Tax Return", href: "/services/itr" },
+    { name: "Startup Consulting", href: "/services/startup-consulting" },
+    { name: "Business Strategy", href: "/services/business-strategy" },
+    { name: "Digital Marketing", href: "/services/digital-marketing" },
+    { name: "ISO Certification", href: "/services/iso-certification" },
+    { name: "Software Development", href: "/services/software-development" },
+    { name: "AI Tools Integration", href: "/services/ai-tools-integration" },
   ];
 
   return (
@@ -47,20 +48,20 @@ export default function Navbar() {
           <div className="flex items-center space-x-4 text-sm text-muted-foreground">
             <div className="flex items-center">
               <Phone className="h-3 w-3 mr-1" />
-              <span>+91 98765 43210</span>
+              <span>+91 7009899194</span>
             </div>
             <div className="flex items-center">
               <Mail className="h-3 w-3 mr-1" />
-              <span>contact@gstify.com</span>
+              <span>abhijeet@onlinestartup.store</span>
             </div>
           </div>
           <div className="flex items-center space-x-4">
             <Badge variant="outline" className="text-xs font-normal">
-              GST Helpline
+              Expert Support
             </Badge>
-            <Link href="/track" className="text-xs hover:text-primary transition-colors">
-              Track Application
-            </Link>
+            {/* <Link href="/track" className="text-xs hover:text-primary transition-colors">
+              Track Project
+            </Link> */}
           </div>
         </div>
       </div>
@@ -95,10 +96,10 @@ export default function Navbar() {
               </div>
               <div>
                 <span className="text-xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-                  Gstify
+                  Abhijeet Suman
                 </span>
                 <span className="hidden sm:block text-xs text-muted-foreground">
-                  Tax & Compliance Services
+                  Consulting & Solutions
                 </span>
               </div>
             </Link>
@@ -119,7 +120,7 @@ export default function Navbar() {
                         <li key={service.name}>
                           <NavigationMenuLink asChild>
                             <Link
-                              href={service.href}
+                              href="#services"
                               className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                             >
                               <div className="text-sm font-medium">{service.name}</div>
@@ -133,15 +134,15 @@ export default function Navbar() {
 
                 {/* Regular Menu Items */}
                 <NavigationMenuItem>
-                  <Link href="#why-us" className="group flex items-center h-9 px-3 text-foreground hover:text-primary">
-                    <span>Why Us</span>
+                  <Link href="#about" className="group flex items-center h-9 px-3 text-foreground hover:text-primary">
+                    <span>About</span>
                     <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-primary mt-1"></span>
                   </Link>
                 </NavigationMenuItem>
                 
                 <NavigationMenuItem>
-                  <Link href="#pricing" className="group flex items-center h-9 px-3 text-foreground hover:text-primary">
-                    <span>Pricing</span>
+                  <Link href="#results" className="group flex items-center h-9 px-3 text-foreground hover:text-primary">
+                    <span>Results</span>
                     <span className="block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 bg-primary mt-1"></span>
                   </Link>
                 </NavigationMenuItem>
@@ -158,7 +159,7 @@ export default function Navbar() {
             <div className="flex items-center pl-2 space-x-3">
               <ThemeToggle />
               <Button className="group">
-                <span>Enquire Now</span>
+                <a href="#contact">Get Started</a>
                 <ChevronDown className="ml-1 h-4 w-4 transition-transform group-hover:rotate-180" />
               </Button>
             </div>
@@ -203,18 +204,18 @@ export default function Navbar() {
               
               <div className="pt-3 space-y-3">
                 <Link
-                  href="#why-us"
+                  href="#about"
                   className="block text-foreground hover:text-primary"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Why Us
+                  About
                 </Link>
                 <Link
-                  href="#pricing"
+                  href="#results"
                   className="block text-foreground hover:text-primary"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  Pricing
+                  Results
                 </Link>
                 <Link
                   href="#contact"
@@ -226,7 +227,7 @@ export default function Navbar() {
               </div>
               
               <div className="pt-4">
-                <Button className="w-full">Enquire Now</Button>
+                <Button className="w-full">Get Started</Button>
                 <div className="flex items-center justify-between mt-4 text-xs text-muted-foreground">
                   <div className="flex items-center">
                     <Phone className="h-3 w-3 mr-1" />
@@ -234,7 +235,7 @@ export default function Navbar() {
                   </div>
                   <div className="flex items-center">
                     <Mail className="h-3 w-3 mr-1" />
-                    <span>contact@gstify.com</span>
+                    <span>contact@company.com</span>
                   </div>
                 </div>
               </div>
