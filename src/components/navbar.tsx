@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X, ChevronDown, Phone, Mail } from "lucide-react";
 import { ThemeToggle } from "./theme-toggle";
 import { Button } from "./ui/button";
@@ -52,16 +53,13 @@ export default function Navbar() {
             </div>
             <div className="flex items-center">
               <Mail className="h-3 w-3 mr-1" />
-              <span>abhijeet@onlinestartup.store</span>
+              <span> abhijeetskarto.er@gmail.com</span>
             </div>
           </div>
           <div className="flex items-center space-x-4">
             <Badge variant="outline" className="text-xs font-normal">
               Expert Support
             </Badge>
-            {/* <Link href="/track" className="text-xs hover:text-primary transition-colors">
-              Track Project
-            </Link> */}
           </div>
         </div>
       </div>
@@ -77,22 +75,15 @@ export default function Navbar() {
         <div className="container mx-auto px-4 sm:px-6 flex items-center justify-between h-16 md:h-20">
           <div className="flex items-center">
             <Link href="/" className="flex items-center group">
-              <div className="relative w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mr-3 group-hover:bg-primary/20 transition-colors">
-                <svg 
-                  viewBox="0 0 24 24" 
-                  className="w-6 h-6 text-primary" 
-                  fill="none" 
-                  stroke="currentColor" 
-                  strokeWidth="2" 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round"
-                >
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                  <polyline points="14 2 14 8 20 8"></polyline>
-                  <line x1="16" y1="13" x2="8" y2="13"></line>
-                  <line x1="16" y1="17" x2="8" y2="17"></line>
-                  <line x1="10" y1="9" x2="8" y2="9"></line>
-                </svg>
+              {/* Logo Image */}
+              <div className="relative w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mr-3 group-hover:bg-primary/20 transition-colors overflow-hidden">
+                <Image
+                  src="/logo.png"
+                  alt="Logo"
+                  width={40}
+                  height={40}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div>
                 <span className="text-xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">

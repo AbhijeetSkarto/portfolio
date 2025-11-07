@@ -35,7 +35,7 @@ export default function Footer() {
                   <MessageCircle className="h-5 w-5" />
                 </a>
                 <a 
-                  href="mailto:abhijeet@onlinestartup.store" 
+                  href="mailto: abhijeetskarto.er@gmail.com" 
                   className="bg-muted p-2 rounded-full text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
                   title="Email"
                 >

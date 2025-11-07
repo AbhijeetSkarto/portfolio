@@ -36,7 +36,7 @@ export default function About() {
           <div>
             <Card className="overflow-hidden border border-border hover:shadow-lg transition-all duration-300 p-0">
               <img 
-                src="/user.jfif" 
+                src="/about.jpeg" 
                 alt="Abhijeet Suman" 
                 className="w-full h-auto object-cover"
               />
