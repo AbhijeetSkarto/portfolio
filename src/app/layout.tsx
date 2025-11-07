@@ -6,8 +6,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Gstify - Ease Your Taxes",
-  description: "Your trusted GST service partner",
+  title: "SKARTO",
+  description: "Consulting & Solutions",
 };
 
 export default function RootLayout({
